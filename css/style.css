@@ -1,0 +1,9 @@
+body{
+    background-color: #D3D3D3;
+}
+
+.county {
+    fill: #FFF;
+    stroke: #CCC;
+    stroke-width: .5px;
+}
