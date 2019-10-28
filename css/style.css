@@ -1,9 +1,88 @@
+
+
 body{
     background-color: #D3D3D3;
+}
+
+h1{
+    color: green;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-align:center;
+}
+.title{
+    font-family: 'Geogia', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+
+}
+
+#datadesc{
+    font-family: 'Geogia', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+
+}
+
+#credits{
+    font-family: 'Geogia', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+
 }
 
 .county {
     fill: #FFF;
     stroke: #CCC;
     stroke-width: .5px;
+}
+
+.regions {
+    stroke: #F6F4EF;
+    stroke-width: 0.5px;
+    stroke-linecap: round;
+}
+
+.map {
+    border: medium solid #999;
+    margin: 10px 0 0 20px;
+}
+
+.chart {
+  float: right;
+  margin: 7px 20px 0 0;
+}
+
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.chartBackground {
+    fill: rgba(128,128,128,.2);
+}
+
+.chartFrame {
+    fill: none;
+    stroke: #999;
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    fill: #999;
 }
