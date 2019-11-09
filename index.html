@@ -131,7 +131,7 @@ var attrArray = ["FID", "county", "countyCode", "registered10", "registered12", 
 
 //console.log(attrArray);
 
-var expressed =  attrArray[7]; //initial attribute  ---I made a change here
+var expressed =  registered10; //initial attribute  ---I made a change here
 
 console.log(expressed);
 
@@ -177,8 +177,8 @@ function setMap(){
         .defer(d3.csv, "VoteOK/data/registration.csv") //load attributes from csv
         .defer(d3.json, "VoteOK/data/okcounty.topojson") //load background spatial data
         .await(callback);*/
-    d3.csv('VoteOK/data/registrations.csv').then(function(csvData) {
-      d3.json('VoteOK/data/okcounty.topojson').then(function(oklahoma) {
+    d3.csv('data/registrations.csv').then(function(csvData) {
+      d3.json('data/okcounty.topojson').then(function(oklahoma) {
         callback(null, csvData, oklahoma);
         console.log(csvData);
       });
