@@ -7,7 +7,6 @@
 
 		<!--put your external stylesheet links here-->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="VoteOK/css/style.css">
     <style>
     body{
         background-color: #f7f6ed;
@@ -117,9 +116,10 @@
 
 		<!--put your external script links here-->
         <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/d3js/3.5.17/d3.min.js"></script> -->
-		    <script type="text/javascript" src ="/VoteOK/lib/d3/d3.js"></script>
+		    <!--<script type="text/javascript" src ="/VoteOK/lib/d3/d3.js"></script> -->
         <script src="https://d3js.org/d3-array.v1.min.js"></script>
         <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.7/d3.min.js"></script>
         <script type="text/javascript" src="/VoteOK/lib/topojson/topojson.js"></script>
 
 
@@ -131,7 +131,7 @@ var attrArray = ["FID", "county", "countyCode", "registered10", "registered12", 
 
 //console.log(attrArray);
 
-var expressed = 'registered10'; // attrArray[0]; //initial attribute
+var expressed =  registered10; //initial attribute  ---I made a change here
 
 console.log(expressed);
 
@@ -403,7 +403,7 @@ function setChart(csvData, colorScale){
                //create a scale to size bars proportionally to frame
                 var yScale = d3.scaleLinear()
                     .range([0, chartHeight])
-                    .domain([0, 105]);
+                    .domain([105, 0]);
 
                 //Example 2.4 line 8...set bars for each province
                 var bars = chart.selectAll(".bars")
